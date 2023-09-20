@@ -1,0 +1,25 @@
+@startuml
+
+class AparelhoTelefonico{
+    +String ligar()
+    +String atenderChamada()
+    +String iniciarConversaVoz()
+}
+
+class NavegadorWeb {
+    +String  exibirPagina()
+    +String dicionarNovaAba()
+    +String atualizarPagina()
+}
+
+class ReprodutorDeMusica  {
+    +String  tocarMusica()
+    +String pausarMusica()
+    +String selecionarMusica()
+}
+
+class iPhone implements ReprodutorDeMusica, AparelhoTelefonico, NavegadorWeb
+   
+
+
+@enduml
